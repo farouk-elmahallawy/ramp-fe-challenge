@@ -31,7 +31,7 @@ export const getTransactionsPaginated = ({
     throw new Error(`Invalid page ${page}`)
   }
 
-  const nextPage = end < data.transactions.length ? page + 1 : 0
+  const nextPage = end < data.transactions.length ? page + 1 : null
 
   return {
     nextPage,
